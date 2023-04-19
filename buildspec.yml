@@ -17,7 +17,7 @@ phases:
     - python --version
   build:
     commands:
-      - pylint -rn --rcfile=.pylintrc *
+      - pylint -rn --rcfile=.pylintrc myapp/*
       - bandit -iii -r myproject --exclude=buildspec.yml,db.sqlite3,requirements.txt
       - pipenv lock
       - pipenv requirements
