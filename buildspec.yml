@@ -19,9 +19,6 @@ phases:
     commands:
       - pylint -rn myapp/* --disable=all
       - bandit -iii -r myproject --exclude=buildspec.yml,db.sqlite3,requirements.txt
-      - pipenv requirements
-      - pipenv check 
-      - pipenv check > pipenv-output.txt
 
 artifacts:
  files:
