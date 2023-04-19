@@ -25,7 +25,8 @@ SECRET_KEY = 'betsff(e3$v-n@gc53*afg^r36tiz$4#lujpjxub1!(@zkxfl9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['x22104402-devopsec-env.eba-bi2hqmzw.ap-southeast-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['x22104402-devopsec-env.eba-bi2hqmzw.ap-southeast-1.elasticbeanstalk.com',
+'http://x22104402-devopsec-env.eba-bi2hqmzw.ap-southeast-1.elasticbeanstalk.com/signup']
 
 
 # Application definition
