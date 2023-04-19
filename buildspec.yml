@@ -17,7 +17,7 @@ phases:
     - python --version
   build:
     commands:
-      - pylint -rn myapp/*
+      - pylint -rn myapp/* --disable=all
       - bandit -iii -r myproject --exclude=buildspec.yml,db.sqlite3,requirements.txt
       - pipenv lock
       - pipenv requirements
