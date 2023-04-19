@@ -22,8 +22,8 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav" >
                 <a class="nav-item nav-link active" href="{% url 'home' %}" style="color: white;">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="{% url 'findbus' %}" style="color: white;">Find Bus</a>
-                <a class="nav-item nav-link" href="{% url 'seebookings' %}" style="color: white;">See Bookings</a>
+                <a class="nav-item nav-link" href="{% url 'findbus' %}" style="color: white;">Avail Bus</a>
+                <a class="nav-item nav-link" href="{% url 'seebookings' %}" style="color: white;">Bookings</a>
                 {% if request.user.is_active %}
                 <a class="nav-item nav-link " href="{% url 'signout' %}" style="color: white;">Sign out</a>
                 {% else %}
